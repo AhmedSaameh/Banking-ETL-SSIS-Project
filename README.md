@@ -59,11 +59,11 @@ Financial institutions generate massive volumes of transaction data daily. This 
 ## 📐 Data Warehouse — Star Schema
 
 ```
-         Dim_User
-             │
-Dim_Time ────┼──── Fact_Transactions ────┬──── Dim_Card
-             │                           │
-         Dim_Date               Dim_Merchant
+                         Dim_User
+                             │
+     Dim_Time ───── Fact_Transactions ───── Dim_Card
+                      │           │
+                   Dim_Date    Dim_Merchant
 ```
 
 ### Dimensions:
